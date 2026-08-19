@@ -63,6 +63,10 @@ The model follows the **hedonic pricing** approach (Rosen, 1974), treating a pla
 
 The mean market value is more than twice the median, confirming strong right skew and motivating the log transformation.
 
+![Market value distribution](figures/market_value_distribution.png)
+
+![Log market value distribution](figures/log_market_value_distribution.png)
+
 ---
 
 ## Model specification
@@ -117,7 +121,11 @@ ln(market_value) = β₀
 
 **Age:** the fitted parabola peaks at ≈16.3 years, below the sample minimum of 18. Within the observed range (18–42), value therefore declines monotonically with age, and the decline accelerates: around the sample mean of 26, each additional year costs roughly **−10.9%** of market value, holding everything else constant. The positive linear term is an artifact of fitting a parabola to data containing exceptionally highly valued teenagers (e.g. Yamal, Cubarsí), not evidence of rising value among adults.
 
+![Market value by age](figures/age_curve.png)
+
 **League:** every league carries a significant discount relative to the Premier League. This gap is financial rather than sporting. Premier League clubs' broadcast revenue (≈€3.9bn in 2023/24) was more than double La Liga's (€1.8bn), and English money is spread far more evenly across clubs, which is why the gap shows up in medians and not just at the top.
+
+![Market value by league](figures/league_boxplots.png)
 
 **Position:** forwards command a **~42% premium** over defenders; the midfielder–defender difference is not statistically significant.
 
