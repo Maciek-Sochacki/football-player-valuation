@@ -1,0 +1,15 @@
+# Determinants of football player market value in Europe's top leagues
+# Bachelor's thesis, University of Gdansk, 2026
+# Author: Maciej Sochacki
+#
+# Requires: football_player_valuation.gdt
+# (dataset not redistributed - see README for sources and preprocessing steps)
+
+ols l_market_value const rating age_new sq_age_new top_club \
+    Dleague_1 Dleague_2 Dleague_3 Dleague_4 Dleague_5 Dleague_6 \
+    Dpos_fbref_1 Dpos_fbref_2 l_minutes_played --robust
+
+modtest --white-nocross
+modtest --normality
+reset
+vif
