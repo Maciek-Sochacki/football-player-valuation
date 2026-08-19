@@ -222,4 +222,5 @@ The largest residuals are interpretable and systematic rather than random.
 ## Author
 
 Maciej Sochacki
-sochackim41@gmail.com
+macieksochacki@icloud.com
+[LinkedIn](https://www.linkedin.com/in/macieksochacki/)
